@@ -1,0 +1,140 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #38bdf8;
+}
+
+/* Dropdown */
+details {
+  position: relative;
+}
+
+details ul {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #1e293b;
+  list-style: none;
+  padding: 10px;
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+details ul li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+details ul li:hover {
+  background-color: #334155;
+  border-radius: 4px;
+}
+
+/* SEARCH BOX STYLING (NEW) */
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #1e293b;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background: transparent;
+  color: white;
+  width: 180px;
+}
+
+.search-box input::placeholder {
+  color: #94a3b8;
+}
+
+.search-btn {
+  border: none;
+  background-color: #38bdf8;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #0ea5e9;
+}
+
+/* Auth Button */
+
+.auth-button {
+  padding: 8px 16px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .Header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-box input {
+    width: 140px;
+  }
+}
